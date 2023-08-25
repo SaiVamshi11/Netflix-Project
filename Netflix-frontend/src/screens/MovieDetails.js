@@ -35,7 +35,7 @@ export default function MovieDetails() {
                 const response = await axios.get(
                     `https://www.googleapis.com/youtube/v3/search?q=${encodeURIComponent(
                         `${movieDetails.title || movieDetails.name || movieDetails.original_name} official trailer`
-                    )}&key={API_KEY}&type=video`
+                    )}&key=AIzaSyCKA-PKo3F2C1FzmXMWvd0T2rOzgF1Kty4&type=video`
                 );
                 if (response.data.items.length > 0) {
                     const firstVideo = response.data.items[0];
